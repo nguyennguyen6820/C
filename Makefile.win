@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o bai1_dayso.o bai2_sach.o bai3_dathuc.o
-LINKOBJ  = main.o bai1_dayso.o bai2_sach.o bai3_dathuc.o
+OBJ      = main.o bai1_dayso.o bai2_sach.o bai4_giangvien.o bai5_sach_lkdon.o
+LINKOBJ  = main.o bai1_dayso.o bai2_sach.o bai4_giangvien.o bai5_sach_lkdon.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -33,5 +33,8 @@ bai1_dayso.o: bai1_dayso.c
 bai2_sach.o: bai2_sach.c
 	$(CC) -c bai2_sach.c -o bai2_sach.o $(CFLAGS)
 
-bai3_dathuc.o: bai3_dathuc.c
-	$(CC) -c bai3_dathuc.c -o bai3_dathuc.o $(CFLAGS)
+bai4_giangvien.o: bai4_giangvien.c
+	$(CC) -c bai4_giangvien.c -o bai4_giangvien.o $(CFLAGS)
+
+bai5_sach_lkdon.o: bai5_sach_lkdon.c
+	$(CC) -c bai5_sach_lkdon.c -o bai5_sach_lkdon.o $(CFLAGS)

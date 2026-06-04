@@ -11,21 +11,21 @@ void NhapSach(int *n, Sach **A) {
         scanf("%d", n);
     }
 
-    // C?p phát d?ng cho m?ng c?u trúc Sach thông qua con tr? c?p 2
+    // Cap phat dong cho mang cau truc sach thong qua con tro cap 2
     *A = (Sach *)malloc((*n + 1) * sizeof(Sach));
     if (*A == NULL) {
-        printf("Loi cap phat bo nho!\n");
+        printf("Noi cap phat bo nho!\n");
         exit(1);
     }
     
     int i;
 
     for (i = 0; i < *n; i++) {
-        getchar(); // Xóa b? nh? d?m tránh trôi l?nh khi dùng fgets
+        getchar(); // Xoa bo nho dem tranh troi lenh khi dung fgets
         printf("\nNhap thong tin cuon sach thu %d:\n", i + 1);
         printf("+ Ten Sach: ");
         fgets((*A)[i].TenSach, sizeof((*A)[i].TenSach), stdin);
-        (*A)[i].TenSach[strcspn((*A)[i].TenSach, "\n")] = 0; // Lo?i b? d?u xu?ng dòng
+        (*A)[i].TenSach[strcspn((*A)[i].TenSach, "\n")] = 0; // Loai bo dau xuong dong
 
         printf("+ Tac Gia: ");
         fgets((*A)[i].TacGia, sizeof((*A)[i].TacGia), stdin);
@@ -64,7 +64,7 @@ int DemSach(int n, Sach *a) {
 }
 
 void ThongKe(int n, Sach *a) {
-    // M?ng dánh d?u d? tránh th?ng kê trùng l?p m?t nam nhi?u l?n
+    // Mang danh dau de tranh thong ke trung lap mot nam nhieu lan
     int *namDaXet = (int *)calloc(n, sizeof(int));
     int i, j;
     printf("\nThong ke so luong sach theo nam xuat ban:\n");

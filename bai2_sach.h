@@ -9,4 +9,4 @@ void XuatSach(int n, Sach A[]);
 int DemSach(int n, Sach *a);
 void ThongKe(int n, Sach *a);
 int MenuSach();
-void MainSach(); // Hàm ch?u trách nhi?m ch?y vòng l?p menu c?a riêng Bài 2
+void MainSach(); // Ham chiu trach nhiem chay vong lap menu cua rieng bai 2
